@@ -1,0 +1,256 @@
+/* Estilos generales */
+body {
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+    padding: 0;
+    color: #333;
+    line-height: 1.6;
+    background-color: #f9f9f9;
+}
+
+/* Header */
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+    background-color: #ea0707;
+    color: white;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+
+header .logo img {
+    width: 80px; /* Tamaño ajustado para móviles */
+    height: auto;
+}
+
+nav .menu-toggle {
+    display: none; /* Ocultar en desktop */
+    background: none;
+    border: none;
+    color: white;
+    font-size: 24px;
+    cursor: pointer;
+}
+
+nav ul.nav-links {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    align-items: center;
+}
+
+nav ul.nav-links li {
+    margin-left: 20px;
+}
+
+nav ul.nav-links li a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    transition: color 0.3s ease;
+}
+
+nav ul.nav-links li a:hover {
+    color: #ffd700;
+}
+
+/* Estilos para móviles */
+@media (max-width: 768px) {
+    header .logo img {
+        width: 60px; /* Tamaño más pequeño para móviles */
+    }
+
+    nav .menu-toggle {
+        display: block; /* Mostrar el botón de menú en móviles */
+    }
+
+    nav ul.nav-links {
+        display: none; /* Ocultar el menú en móviles */
+        flex-direction: column;
+        position: absolute;
+        top: 60px;
+        right: 20px;
+        background-color: #ea0707;
+        border-radius: 10px;
+        box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+    }
+
+    nav ul.nav-links.active {
+        display: flex; /* Mostrar el menú cuando está activo */
+    }
+
+    nav ul.nav-links li {
+        margin: 10px 0;
+    }
+}
+
+/* Carrusel de Imágenes */
+.carousel-inner img {
+    width: 100%;
+    height: auto; /* Altura automática para móviles */
+    max-height: 400px; /* Altura máxima */
+    object-fit: cover;
+    border-radius: 10px;
+}
+
+@media (max-width: 768px) {
+    .carousel-inner img {
+        max-height: 300px; /* Altura más pequeña para móviles */
+    }
+}
+
+/* Sección Hero */
+#hero {
+    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('./images/logo-colegio.jpg');
+    background-size: cover;
+    background-position: center;
+    color: white;
+    text-align: center;
+    padding: 100px 20px;
+    margin-top: 20px;
+}
+
+#hero .hero-content h1 {
+    font-size: 3em;
+    margin-bottom: 10px;
+    animation: fadeInDown 1s;
+}
+
+#hero .hero-content p {
+    font-size: 1.5em;
+    margin-bottom: 20px;
+    animation: fadeInUp 1s;
+}
+
+#hero .hero-content .btn {
+    background-color: #ffd700;
+    color: #333;
+    padding: 10px 20px;
+    text-decoration: none;
+    border-radius: 5px;
+    font-size: 1.2em;
+    transition: background-color 0.3s ease;
+}
+
+#hero .hero-content .btn:hover {
+    background-color: #e6b800;
+}
+
+/* Sección de Información */
+#informacion {
+    padding: 40px 20px;
+    background-color: white;
+    margin: 20px 0;
+    text-align: center;
+}
+
+#informacion h2 {
+    color: #182219;
+    font-size: 2.5em;
+    margin-bottom: 20px;
+    animation: fadeIn 1s;
+}
+
+#informacion p {
+    font-size: 1.1em;
+    margin-bottom: 20px;
+}
+
+#informacion .enlaces {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+#informacion .enlaces .btn {
+    background-color: #ea0707;
+    color: white;
+    padding: 10px 20px;
+    text-decoration: none;
+    border-radius: 5px;
+    font-size: 1em;
+    transition: background-color 0.3s ease;
+}
+
+#informacion .enlaces .btn:hover {
+    background-color: #c40606;
+}
+
+/* Footer */
+footer {
+    background-color: #333;
+    color: white;
+    padding: 20px;
+    text-align: center;
+}
+
+footer .footer-content {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 20px;
+}
+
+footer .footer-section {
+    flex: 1;
+    margin: 0 10px;
+}
+
+footer .footer-section h3 {
+    margin-bottom: 10px;
+}
+
+footer .footer-section ul {
+    list-style: none;
+    padding: 0;
+}
+
+footer .footer-section ul li {
+    margin-bottom: 5px;
+}
+
+footer .footer-section ul li a {
+    color: white;
+    text-decoration: none;
+}
+
+footer .footer-bottom {
+    border-top: 1px solid #444;
+    padding-top: 10px;
+}
+
+/* Animaciones */
+@keyframes fadeInDown {
+    from {
+        opacity: 0;
+        transform: translateY(-20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@keyframes fadeInUp {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}

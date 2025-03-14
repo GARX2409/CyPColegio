@@ -1,0 +1,149 @@
+/* Estilos generales */
+body {
+    font-family: 'Roboto', Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    color: #333;
+    line-height: 1.6;
+    background-color: #f4f4f4;
+}
+
+/* Header */
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+    background-color: #ea0707;
+    color: white;
+}
+
+header .logo img {
+    width: 100px;
+    height: auto;
+}
+
+header nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+}
+
+header nav ul li {
+    margin-left: 20px;
+}
+
+header nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+/* Sección de Encuestas */
+#encuestas {
+    padding: 60px 20px;
+    background-color: white;
+    margin: 20px 0;
+    text-align: center;
+}
+
+.encuestas-container {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+}
+
+#encuestas h1 {
+    color: #182219;
+    font-size: 2.5em;
+    margin-bottom: 20px;
+    animation: fadeInDown 1s;
+}
+
+#encuestas p {
+    font-size: 1.1em;
+    margin-bottom: 20px;
+    animation: fadeInUp 1s;
+}
+
+/* Botones de encuestas */
+.botones-encuestas {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    margin-bottom: 20px;
+}
+
+.btn-encuesta {
+    background-color: #ea0707;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 1em;
+    transition: background-color 0.3s ease;
+}
+
+.btn-encuesta.active {
+    background-color: #c40606;
+}
+
+.btn-encuesta:hover {
+    background-color: #c40606;
+}
+
+/* Contenedor del iframe */
+.iframe-container {
+    width: 100%;
+    overflow: hidden;
+    border-radius: 10px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+}
+
+iframe {
+    width: 100%;
+    height: 600px; /* Altura reducida para móviles */
+    border: none;
+}
+
+@media (max-width: 768px) {
+    iframe {
+        height: 400px; /* Altura más pequeña para móviles */
+    }
+}
+
+/* Animaciones */
+@keyframes fadeInDown {
+    from {
+        opacity: 0;
+        transform: translateY(-20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@keyframes fadeInUp {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* Footer */
+footer {
+    background-color: #333;
+    color: white;
+    padding: 20px;
+    text-align: center;
+}

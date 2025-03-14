@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contraloría Estudiantil - Colegio Paulo VI</title>
+    <link rel="stylesheet" href="./css/contraloria.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+
+<body>
+    <!-- Header -->
+    <header class="animate__animated animate__fadeInDown">
+        <div class="logo">
+            <img src="./images/logo-colegio.jpg" alt="Colegio Paulo VI">
+        </div>
+        <nav>
+            <button class="menu-toggle" aria-label="Abrir menú">
+                <i class="fas fa-bars"></i>
+            </button>
+            <ul class="nav-links">
+                <li><a href="index.html">Inicio</a></li>
+                <li><a href="personeria.html">Personería</a></li>
+                <li><a href="contraloria.html">Contraloría</a></li>
+                <li><a href="encuestas.html">Encuestas</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Sección de Contraloría -->
+    <section id="contraloria" class="animate__animated animate__fadeIn">
+        <h1>Contraloría Estudiantil</h1>
+
+        <!-- Contralora -->
+        <h2 class="subtitulo">Contralora</h2>
+        <div class="fotos-container">
+            <div class="foto-item wow animate__animated animate__fadeInLeft">
+                <img src="./images/mariapaula.jpeg" alt="Maria Paula Cabrera">
+                <h2>Maria Paula Cabrera</h2>
+                <p>
+                    Encargada de supervisar el uso de los recursos del colegio.
+                </p>
+                <button class="btn-conocer-mas" data-modal="modal1">Conocer más</button>
+            </div>
+        </div>
+
+        <!-- Equipo de Contraloría -->
+        <h2 class="subtitulo">Equipo de Contraloría</h2>
+        <div class="fotos-container">
+            <!-- Tarjeta 1 -->
+            <div class="foto-item wow animate__animated animate__fadeInUp">
+                <img src="./images/quigua.jpeg" alt="Miguel Angel Quigua">
+                <h2>Miguel Angel Quigua</h2>
+                <p>
+                    Responsable de auditorías internas y transparencia.
+                </p>
+                <button class="btn-conocer-mas" data-modal="modal2">Conocer más</button>
+            </div>
+
+            <!-- Tarjeta 2 -->
+            <div class="foto-item wow animate__animated animate__fadeInRight">
+                <img src="./images/guaitarilla.jpeg" alt="Juan Guaitarilla">
+                <h2>Juan Guaitarilla</h2>
+                <p>
+                    Encargado de finanzas y presupuestos estudiantiles.
+                </p>
+                <button class="btn-conocer-mas" data-modal="modal3">Conocer más</button>
+            </div>
+
+            <!-- Tarjeta 3 -->
+            <div class="foto-item wow animate__animated animate__fadeInLeft">
+                <img src="./images/santiago.jpeg" alt="Santiago Valencia">
+                <h2>Santiago Valencia</h2>
+                <p>
+                    Responsable de seguimiento y evaluación de proyectos.
+                </p>
+                <button class="btn-conocer-mas" data-modal="modal4">Conocer más</button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Modales -->
+    <!-- Modal 1 (Contralora) -->
+    <div id="modal1" class="modal">
+        <div class="modal-content">
+            <span class="close">&times;</span>
+            <h2>Maria Paula Cabrera</h2>
+            <p><strong>Nombre completo:</strong> Maria Paula Cabrera Ospina</p>
+            <p><strong>Sede:</strong> Sede Principal</p>
+            <p><strong>Descripción:</strong> Maria Paula es la contralora estudiantil del Colegio Paulo VI. Su principal función es supervisar el uso de los recursos del colegio, garantizando transparencia y eficiencia en su administración. Además, promueve la rendición de cuentas y la participación estudiantil en la gestión de los bienes comunes.</p>
+        </div>
+    </div>
+
+    <!-- Modal 2 (Miguel Angel Quigua) -->
+    <div id="modal2" class="modal">
+        <div class="modal-content">
+            <span class="close">&times;</span>
+            <h2>Miguel Angel Quigua</h2>
+            <p><strong>Nombre completo:</strong> Miguel Angel Quigua Lozada</p>
+            <p><strong>Sede:</strong> Sede Principal</p>
+            <p><strong>Descripción:</strong> Miguel es el responsable de auditorías internas en la contraloría estudiantil. Se encarga de revisar los procesos administrativos y financieros del colegio para asegurar que se cumplan las normas y se utilicen los recursos de manera adecuada.</p>
+        </div>
+    </div>
+
+    <!-- Modal 3 (Juan Guaitarilla) -->
+    <div id="modal3" class="modal">
+        <div class="modal-content">
+            <span class="close">&times;</span>
+            <h2>Juan Guaitarilla</h2>
+            <p><strong>Nombre completo:</strong> Juan Manuel Guaitarilla Sierra</p>
+            <p><strong>Sede:</strong> Sede Principal</p>
+            <p><strong>Descripción:</strong> Juan apoya a Breyner Garay en el área de tecnología, colaborando en el desarrollo de herramientas digitales y soluciones tecnológicas que facilitan la gestión y transparencia de los recursos del colegio. Su trabajo conjunto ha permitido mejorar la eficiencia y comunicación dentro de la comunidad estudiantil.</p>
+        </div>
+    </div>
+
+    <!-- Modal 4 (Santiago Valencia) -->
+    <div id="modal4" class="modal">
+        <div class="modal-content">
+            <span class="close">&times;</span>
+            <h2>Santiago Valencia</h2>
+            <p><strong>Nombre completo:</strong> Johan Santiago Valencia Mejia</p>
+            <p><strong>Sede:</strong> Sede Jose Maria Calvache</p>
+            <p><strong>Descripción:</strong> Santiago es el responsable de seguimiento y evaluación de proyectos en la contraloría estudiantil. Se asegura de que las iniciativas estudiantiles cumplan con sus objetivos y se ejecuten dentro de los plazos y presupuestos establecidos.</p>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer class="animate__animated animate__fadeInUp">
+        <div class="footer-content">
+            <p>&copy; 2025 Colegio Paulo VI. Todos los derechos reservados.</p>
+        </div>
+    </footer>
+
+    <!-- Scripts -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/wow/1.1.2/wow.min.js"></script>
+    <script>
+        new WOW().init();
+
+        // Script para abrir y cerrar modales
+        const modals = document.querySelectorAll('.modal');
+        const buttons = document.querySelectorAll('.btn-conocer-mas');
+        const closeButtons = document.querySelectorAll('.close');
+
+        buttons.forEach((button) => {
+            button.addEventListener('click', () => {
+                const modalId = button.getAttribute('data-modal');
+                const modal = document.getElementById(modalId);
+                modal.style.display = 'block';
+            });
+        });
+
+        closeButtons.forEach((closeButton) => {
+            closeButton.addEventListener('click', () => {
+                const modal = closeButton.closest('.modal');
+                modal.style.display = 'none';
+            });
+        });
+
+        window.addEventListener('click', (event) => {
+            if (event.target.classList.contains('modal')) {
+                event.target.style.display = 'none';
+            }
+        });
+
+        // Script para el menú hamburguesa
+        const menuToggle = document.querySelector('.menu-toggle');
+        const navLinks = document.querySelector('.nav-links');
+
+        menuToggle.addEventListener('click', () => {
+            navLinks.classList.toggle('active');
+        });
+    </script>
+</body>
+
+</html>
