@@ -124,7 +124,7 @@ nav ul.nav-links li a:hover {
 /* Sección Hero */
 /* Sección Hero */
 #hero {
-    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('./images/logo-colegio.jpeg');
+    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('./images/Icon.png');
     background-size: cover;
     background-position: center;
     color: white;
