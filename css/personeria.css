@@ -20,15 +20,17 @@ header {
     position: sticky;
     top: 0;
     z-index: 1000;
+    border-radius: 15px;
+    margin: 10px;
 }
 
 header .logo img {
-    width: 80px; /* Tamaño ajustado para móviles */
+    width: 80px;
     height: auto;
 }
 
 nav .menu-toggle {
-    display: none; /* Ocultar en desktop */
+    display: none;
     background: none;
     border: none;
     color: white;
@@ -58,6 +60,7 @@ nav ul.nav-links li a {
 nav ul.nav-links li a:hover {
     color: #ffd700;
 }
+
 
 /* Estilos para móviles */
 @media (max-width: 768px) {
