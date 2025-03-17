@@ -14,7 +14,7 @@ header {
     justify-content: space-between;
     align-items: center;
     padding: 10px 20px;
-    background-color: #ec1f24;
+    background-color: #ff2c2c;
     color: white;
     box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
     position: sticky;
@@ -22,11 +22,13 @@ header {
     z-index: 1000;
     border-radius: 15px;
     margin: 10px;
+    animation: fadeInDown 1s;
 }
 
 header .logo img {
     width: 80px;
     height: auto;
+    animation: bounceIn 1s;
 }
 
 nav .menu-toggle {
@@ -36,6 +38,7 @@ nav .menu-toggle {
     color: white;
     font-size: 24px;
     cursor: pointer;
+    animation: fadeInRight 1s;
 }
 
 nav ul.nav-links {
@@ -44,10 +47,12 @@ nav ul.nav-links {
     padding: 0;
     display: flex;
     align-items: center;
+    animation: fadeInRight 1s;
 }
 
 nav ul.nav-links li {
     margin-left: 20px;
+    animation: fadeInRight 1s;
 }
 
 nav ul.nav-links li a {
@@ -55,6 +60,7 @@ nav ul.nav-links li a {
     text-decoration: none;
     font-weight: bold;
     transition: color 0.3s ease;
+    animation: fadeInRight 1s;
 }
 
 nav ul.nav-links li a:hover {
@@ -75,11 +81,12 @@ nav ul.nav-links li a:hover {
         display: none;
         flex-direction: column;
         position: absolute;
-        top: 60px;
+        top: 70px;
         right: 20px;
         background-color: #ea0707;
         border-radius: 10px;
         box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+        padding: 10px;
     }
 
     nav ul.nav-links.active {
@@ -89,53 +96,23 @@ nav ul.nav-links li a:hover {
     nav ul.nav-links li {
         margin: 10px 0;
     }
-
-    /* Hero en móviles */
-    #hero {
-        padding: 60px 20px;
-        flex-direction: column;
-        text-align: center;
-    }
-
-    .hero-text {
-        max-width: 100%;
-        margin-bottom: 20px;
-    }
-
-    .hero-text h1 {
-        font-size: 2em;
-        margin-bottom: 10px;
-    }
-
-    .hero-text p {
-        font-size: 1.2em;
-        margin-bottom: 20px;
-    }
-
-    .hero-buttons {
-        gap: 10px;
-    }
-
-    .btn-hero {
-        font-size: 1em;
-        padding: 8px 16px;
-    }
 }
-/* Sección Hero */
+
 /* Sección Hero */
 #hero {
     background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('./images/logo-colegio.jpg');
     background-size: cover;
     background-position: center;
     color: white;
-    padding: 100px 20px 150px 20px; /* Más padding en la parte inferior */
+    padding: 100px 20px 150px 20px;
     margin-top: 20px;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
     align-items: center;
     text-align: center;
-    position: relative; /* Para posicionar los botones correctamente */
+    position: relative;
+    animation: fadeIn 1s;
 }
 
 .hero-content {
@@ -146,35 +123,28 @@ nav ul.nav-links li a:hover {
 .hero-text h1 {
     font-size: 3em;
     margin-bottom: 10px;
+    animation: fadeInLeft 1s;
 }
 
 .hero-text p {
     font-size: 1.5em;
     margin-bottom: 20px;
+    animation: fadeInLeft 1s;
 }
 
 .hero-buttons {
-    position: absolute; /* Posicionar los botones en la parte inferior */
-    bottom: 20px; /* Distancia desde la parte inferior */
+    position: absolute;
+    bottom: 20px;
     display: flex;
     flex-direction: column;
     align-items: center;
-    gap: 15px; /* Espacio entre filas de botones */
+    gap: 15px;
+    animation: fadeInUp 1s;
 }
 
 .button-row {
     display: flex;
-    gap: 20px; /* Espacio entre botones en la misma fila */
-}
-
-/* Animación para los botones */
-@keyframes pulse {
-    0%, 100% {
-        transform: scale(1);
-    }
-    50% {
-        transform: scale(1.1);
-    }
+    gap: 20px;
 }
 
 .btn-hero {
@@ -185,40 +155,42 @@ nav ul.nav-links li a:hover {
     border-radius: 5px;
     font-size: 1.2em;
     transition: background-color 0.3s ease, transform 0.3s ease;
-    animation: fadeInUp 1s ease-in-out, pulse 1.5s ease-in-out infinite; /* Animación de pulso */
+    animation: fadeInUp 1s ease-in-out, pulse 1.5s ease-in-out infinite;
 }
 
 .btn-hero:hover {
     background-color: #e6b800;
-    animation: none; /* Detener la animación al hacer hover */
-    transform: scale(1.1); /* Efecto de escala al hacer hover */
+    animation: none;
+    transform: scale(1.1);
 }
 
-/* Sección de Información */
 /* Sección de Información */
 #informacion {
     padding: 60px 20px;
     background-color: white;
     margin: 40px 0;
     text-align: center;
+    animation: fadeInUp 1s;
 }
 
 #informacion h2 {
     color: #182219;
     font-size: 2.5em;
     margin-bottom: 40px;
-    animation: fadeIn 1s;
+    animation: fadeInDown 1s;
 }
 
 #informacion p {
     font-size: 1.1em;
     margin-bottom: 30px;
+    animation: fadeInUp 1s;
 }
 
 #informacion .enlaces {
     display: flex;
     justify-content: center;
     gap: 30px;
+    animation: fadeInUp 1s;
 }
 
 #informacion .enlaces .btn {
@@ -229,20 +201,12 @@ nav ul.nav-links li a:hover {
     border-radius: 5px;
     font-size: 1.1em;
     transition: background-color 0.3s ease, transform 0.3s ease;
+    animation: bounceIn 1s;
 }
 
 #informacion .enlaces .btn:hover {
     background-color: #c40606;
     transform: translateY(-5px);
-}
-
-/* Espacio entre el botón "Conocer más" y el título de Contraloría */
-.info-item {
-    margin-bottom: 60px; /* Aumenté el margen inferior */
-}
-
-.info-item:last-child {
-    margin-bottom: 0; /* Eliminar margen inferior del último elemento */
 }
 
 /* Footer */
@@ -251,40 +215,48 @@ footer {
     color: white;
     padding: 20px;
     text-align: center;
+    animation: fadeInUp 1s;
 }
 
 footer .footer-content {
     display: flex;
     justify-content: space-between;
     margin-bottom: 20px;
+    animation: fadeInUp 1s;
 }
 
 footer .footer-section {
     flex: 1;
     margin: 0 10px;
+    animation: fadeInUp 1s;
 }
 
 footer .footer-section h3 {
     margin-bottom: 10px;
+    animation: fadeInLeft 1s;
 }
 
 footer .footer-section ul {
     list-style: none;
     padding: 0;
+    animation: fadeInRight 1s;
 }
 
 footer .footer-section ul li {
     margin-bottom: 5px;
+    animation: fadeInRight 1s;
 }
 
 footer .footer-section ul li a {
     color: white;
     text-decoration: none;
+    animation: fadeInRight 1s;
 }
 
 footer .footer-bottom {
     border-top: 1px solid #444;
     padding-top: 10px;
+    animation: fadeInUp 1s;
 }
 
 /* Animaciones */
@@ -316,5 +288,25 @@ footer .footer-bottom {
     }
     to {
         opacity: 1;
+    }
+}
+
+@keyframes bounceIn {
+    from {
+        opacity: 0;
+        transform: scale(0.5);
+    }
+    to {
+        opacity: 1;
+        transform: scale(1);
+    }
+}
+
+@keyframes pulse {
+    0%, 100% {
+        transform: scale(1);
+    }
+    50% {
+        transform: scale(1.1);
     }
 }
